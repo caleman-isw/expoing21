@@ -173,10 +173,10 @@
     }
   });
 
-  // Porfolio isotope and filter
+  // Inicialización de filtros y demás
   $(window).on('load', function() {
 
- 
+    // Resetear filtros
      $('#filterSWM').addClass('hidden');
      $('.filter-swm').addClass('hidden');
      $('#filterProducto').addClass('hidden');
@@ -184,13 +184,20 @@
      $('#filterProceso').addClass('hidden');
      $('.filter-proceso').addClass('hidden');
     
+    // Declarar apuntadores a contenedores por filtrar
 
-    var portfolioIsotope = $('.portfolio-container').isotope({
+    var projectGrid = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
- 
 
+    var projectList = $('.projects-container').isotope({
+      itemSelector: '.project-list'
+    });
+    
+    //Al hacer clic en el cuadro de una sección...
     $('#portfolio-flters li').on('click', function() {
+
+      //Resetear los filtros
       $('#filterSWM').removeClass('hidden');
       $('.filter-swm').removeClass('hidden');
       $('#filterProducto').removeClass('hidden');
@@ -198,19 +205,21 @@
       $('#filterProceso').removeClass('hidden');
       $('.filter-proceso').removeClass('hidden');
       $("#portfolio-flters li").removeClass('filter-active');
+
+      //Actualizar filtro activo      
       $(this).addClass('filter-active');
 
-
-      portfolioIsotope.isotope({
+      //Filtrar lista
+      projectList.isotope({
         filter: $(this).data('filter')
       });
-     
 
-      aos_init();
+      //Filtrar cuadrícula
+      projectGrid.isotope({
+        filter: $(this).data('filter')
+      });
+
     });
-
-    
-
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
@@ -218,34 +227,8 @@
         'share': false
       });
     });
+
   });
-
-
- // Porfolio isotope and filter
-  $(window).on('load', function() {
-    var portfolioIsotope2 = $('.projects-container').isotope({
-      itemSelector: '.project-list'
-    });
-
-   
-
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope2.isotope({
-        filter: $(this).data('filter')
-      });
-     
-
-    });
-
-    
-
-
-    
-  });
-
 
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
