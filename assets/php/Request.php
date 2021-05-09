@@ -1,8 +1,12 @@
 <?php
 
-$dbServername = "162.241.62.206";
-$dbUsername = "expoinge_dev";
-$dbPassword = "dev123";
-$dbName = "expoinge_database";
+require "conexion.php";
 
-$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+$result = mysqli_query($con, "SELECT * FROM proyecto");
+
+while($data = mysqli_fetch_assoc($result))
+{
+    echo "<li ><span>".$data['nombre']."</span></li>";
+
+}
+?>
