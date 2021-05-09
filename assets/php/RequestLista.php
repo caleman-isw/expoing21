@@ -2,24 +2,36 @@
 
 require "conexion.php";
 
-$result = mysqli_query($con, "SELECT * FROM proyecto");
+#Lista de académicos
+$result = mysqli_query($con, "SELECT * FROM proyecto where tipoProyecto like '1%'");
+$abbreviation = "academico";
+$numProyecto = 1;
+
+echo "<ol start = ". $numProyecto . "  id =\"filteracademico\" class=\"project-list filter-academico list-content\">";
 
 while($data = mysqli_fetch_assoc($result)){
-  switch ($data['tipoProyecto'][0]) {
-        case 1:
-            $abbreviation = "academico";
-            break;
-        case 2:
-            $abbreviation = "producto";
-            break;
-        case 3:
-            $abbreviation = "proceso";
-            break;
+  echo "<li><span>" . $data['nombre'] . "</span></li>";
+  }
+echo "</ol>";
+
+#Lista de Producto
+$abbreviation = "producto";
+$result = mysqli_query($con, "SELECT * FROM proyecto where tipoProyecto like '2%'");
+
+echo "<ol start = ". $numProyecto . "  id =\"filterproducto\" class=\"project-list filter-producto list-content\">";
+
+  while($data = mysqli_fetch_assoc($result)){
+    echo "<li><span>" . $data['nombre'] . "</span></li>";
     }
+echo "</ol>";
 
+#Lista de Proceso
+$result = mysqli_query($con, "SELECT * FROM proyecto where tipoProyecto like '3%'");
 
-    echo "<ol start = ". $data['idProyecto'] . "  id =\"filter\" ". $abbreviation . " class=\"project-list filter- ". $abbreviation . " list-content\">
-            <li><span>" . $data['nombre'] . "</span></li>
-          </ol>";
-}
+echo "<ol start = ". $numProyecto . "  id =\"filterproceso\" class=\"project-list filter-proceso list-content\">";
+
+  while($data = mysqli_fetch_assoc($result)){
+    echo "<li><span>" . $data['nombre'] . "</span></li>";
+    }
+echo "</ol>";
 ?>
