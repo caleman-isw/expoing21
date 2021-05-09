@@ -234,10 +234,10 @@
 
     $.ajax({    //create an ajax request to display.php
       type: "GET",
-      url: "Request.php",             
+      url: "assets/php/Request.php",             
       dataType: "html",   //expect html to be returned                
       success: function(response){                    
-          // $("#listaProyectos").html(response);
+          $("#listaProyectos").html(response);
           alert(response);
       }
     });
