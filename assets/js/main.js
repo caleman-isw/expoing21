@@ -173,7 +173,7 @@
     }
   });
 
-  // Inicialización de filtros y demás
+// Inicialización de filtros y demás
   $(window).on('load', function() {
 
     // Resetear filtros
@@ -183,7 +183,7 @@
      $('.filter-producto').addClass('hidden');
      $('#filterProceso').addClass('hidden');
      $('.filter-proceso').addClass('hidden');
-    
+
     // Declarar apuntadores a contenedores por filtrar
 
     var projectGrid = $('.portfolio-container').isotope({
@@ -193,7 +193,7 @@
     var projectList = $('.projects-container').isotope({
       itemSelector: '.project-list'
     });
-    
+
     //Al hacer clic en el cuadro de una sección...
     $('#portfolio-flters li').on('click', function() {
 
@@ -206,7 +206,7 @@
       $('.filter-proceso').removeClass('hidden');
       $("#portfolio-flters li").removeClass('filter-active');
 
-      //Actualizar filtro activo      
+      //Actualizar filtro activo
       $(this).addClass('filter-active');
 
       //Filtrar lista
