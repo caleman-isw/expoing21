@@ -1,6 +1,6 @@
 <?php
 
-$dbServername = "162.241.62.206";
+$dbServername = "localhost";
 $dbUsername = "expoinge_dev";
 $dbPassword = "dev123";
 $dbName = "expoinge_database";
