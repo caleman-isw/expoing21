@@ -7,7 +7,7 @@
 !(function($) {
   "use strict";
 
-  // Preloader
+  //Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function() {
@@ -16,7 +16,7 @@
     }
   });
 
-  // Smooth scroll for the navigation menu and links with .scrollto classes
+  //Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -49,7 +49,7 @@
     }
   });
 
-  // Activate smooth scroll on page load with hash links in the url
+  //Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
@@ -62,7 +62,7 @@
     }
   });
 
-  // Mobile Navigation
+  //Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
       class: 'mobile-nav d-lg-none'
@@ -97,7 +97,7 @@
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
 
-  // Navigation active state on scroll
+  //Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, #mobile-nav');
 
@@ -120,7 +120,7 @@
     });
   });
 
-  // Toggle .header-scrolled class to #header when page is scrolled
+  //Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
@@ -133,7 +133,7 @@
     $('#header').addClass('header-scrolled');
   }
 
-  // Back to top button
+  //Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -149,13 +149,13 @@
     return false;
   });
 
-  // jQuery counterUp
+  //jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
+  //Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -173,10 +173,10 @@
     }
   });
 
-  // Inicialización de filtros y demás
+  //Inicialización de filtros y demás
   $(window).on('load', function() {
 
-    // Resetear filtros
+    //Resetear filtros
      $('#filterSWM').addClass('hidden');
      $('.filter-swm').addClass('hidden');
      $('#filterProducto').addClass('hidden');
@@ -184,7 +184,7 @@
      $('#filterProceso').addClass('hidden');
      $('.filter-proceso').addClass('hidden');
     
-    // Declarar apuntadores a contenedores por filtrar
+    //Declarar apuntadores a contenedores por filtrar
 
     var projectGrid = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
@@ -226,6 +226,20 @@
       $('.venobox').venobox({
         'share': false
       });
+    });
+
+  });
+
+  $(document).ready(function() {
+
+    $.ajax({    //create an ajax request to display.php
+      type: "GET",
+      url: "Request.php",             
+      dataType: "html",   //expect html to be returned                
+      success: function(response){                    
+          // $("#listaProyectos").html(response);
+          alert(response);
+      }
     });
 
   });
