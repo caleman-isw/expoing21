@@ -176,6 +176,28 @@
   //Inicialización de filtros y demás
   $(window).on('load', function() {
 
+    $.ajax({
+      type: "GET",
+      url: "assets/php/RequestLista.php",             
+      dataType: "html",
+      asyn: false,
+      success: function(response){                    
+          $("#listaProyectos").html(response);
+          alert(response);
+      }
+    });
+
+    $.ajax({
+      type: "GET",
+      url: "assets/php/RequestCuadricula.php",             
+      dataType: "html",
+      asyn: false,
+      success: function(response){                    
+          $("#cuadriculaProyectos").html(response);
+          alert(response);
+      }
+    });
+
     //Resetear filtros
      $('#filterSWM').addClass('hidden');
      $('.filter-swm').addClass('hidden');
@@ -226,20 +248,6 @@
       $('.venobox').venobox({
         'share': false
       });
-    });
-
-  });
-
-  $(document).ready(function() {
-
-    $.ajax({    //create an ajax request to display.php
-      type: "GET",
-      url: "assets/php/Request.php",             
-      dataType: "html",   //expect html to be returned                
-      success: function(response){                    
-          $("#listaProyectos").html(response);
-          alert(response);
-      }
     });
 
   });

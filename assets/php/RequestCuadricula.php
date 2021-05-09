@@ -18,9 +18,9 @@ while ($data = mysqli_fetch_assoc($result)) {
             break;
     }
 
-    echo "<div div class=\"col-lg-3 col-md-6 portfolio-item filter-" . $abbreviation . "\">
+    echo "<div class=\"col-lg-3 col-md-6 portfolio-item filter-" . $abbreviation . "\">
               <div class=\"portfolio-wrap\">
-                  <img src=\"assets/img/map/cuadro-" . $data['idProyecto'] . ".png\" class=\"img-fluid\" alt=\"\">
+                  <img src=\"assets/img/map/" . $data['idProyecto'] . ".png\" class=\"img-fluid\" alt=\"\">
                   <div class=\"portfolio-info\">
                       <h4>" . $data['nombre'] . "</h4>
                       <p>" . $data['nombre'] . "</p>
