@@ -180,10 +180,9 @@
       type: "GET",
       url: "assets/php/RequestLista.php",             
       dataType: "html",
-      asyn: false,
+      async: false,
       success: function(response){                    
           $("#listaProyectos").html(response);
-          alert(response);
       }
     });
 
@@ -191,10 +190,9 @@
       type: "GET",
       url: "assets/php/RequestCuadricula.php",             
       dataType: "html",
-      asyn: false,
+      async: false,
       success: function(response){                    
           $("#cuadriculaProyectos").html(response);
-          alert(response);
       }
     });
 
