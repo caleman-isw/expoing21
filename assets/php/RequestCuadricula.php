@@ -2,7 +2,7 @@
 
 require "conexion.php";
 
-$result = mysqli_query($con, "SELECT * FROM proyecto");
+$result = mysqli_query($con, "SELECT * FROM proyecto order by idProyecto");
 
 echo "<div class=\"col-lg-12\">";
 
