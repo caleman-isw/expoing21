@@ -173,38 +173,70 @@
     }
   });
 
-  //Inicialización de filtros y demás
+    // Porfolio isotope and filter
   $(window).on('load', function() {
 
-    $.ajax({
-      type: "GET",
-      url: "assets/php/RequestLista.php",             
-      dataType: "html",
-      asyn: false,
-      success: function(response){                    
-          $("#listaProyectos").html(response);
-          alert(response);
-      }
-    });
 
-    $.ajax({
-      type: "GET",
-      url: "assets/php/RequestCuadricula.php",             
-      dataType: "html",
-      asyn: false,
-      success: function(response){                    
-          $("#cuadriculaProyectos").html(response);
-          alert(response);
-      }
-    });
 
-    //Resetear filtros
-     $('#filterSWM').addClass('hidden');
      $('.filter-swm').addClass('hidden');
-     $('#filterProducto').addClass('hidden');
      $('.filter-producto').addClass('hidden');
-     $('#filterProceso').addClass('hidden');
      $('.filter-proceso').addClass('hidden');
+     $('.cat-swm').addClass('hidden');
+     $('.cat-proceso').addClass('hidden');
+
+    var portfolioIsotope = $('.portfolio-container').isotope({
+      itemSelector: '.portfolio-item'
+    });
+
+
+    $('#portfolio-flters li').on('click', function() {
+
+
+
+       $('.filter-swm').removeClass('hidden');
+       $('.filter-producto').removeClass('hidden');
+       $('.filter-proceso').removeClass('hidden');
+
+
+
+      $("#portfolio-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+
+
+  if($(this).attr("id") == "SWM") {
+          console.log($(this).attr('class'));
+      $('.cat-swm').removeClass('hidden');
+      }else if ($(this).attr("id") == "swm-c1"){
+        console.log($(this).attr('id'));
+        $('.cat-swm').removeClass('hidden');
+      }else if ($(this).attr("id") == "swm-c2"){
+        console.log($(this).attr('id'));
+        $('.cat-swm').removeClass('hidden');
+      }else{
+          $('.cat-swm').addClass('hidden');
+      }
+
+   if($(this).attr("id") == "PROCESO") {
+          console.log($(this).attr('class'));
+      $('.cat-proceso').removeClass('hidden');
+      }else if ($(this).attr("id") == "proceso-c1"){
+        console.log($(this).attr('id'));
+        $('.cat-proceso').removeClass('hidden');
+      }else if ($(this).attr("id") == "proceso-c2"){
+        console.log($(this).attr('id'));
+        $('.cat-proceso').removeClass('hidden');
+      }else{
+          $('.cat-proceso').addClass('hidden');
+      }
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+
+
+      aos_init();
+    });
     
     //Declarar apuntadores a contenedores por filtrar
 
@@ -221,7 +253,7 @@
 
       //Resetear los filtros
       $('#filterSWM').removeClass('hidden');
-      $('.filter-swm').removeClass('hidden');
+      $('.filter-swm').removeClass('hidden'); //que
       $('#filterProducto').removeClass('hidden');
       $('.filter-producto').removeClass('hidden');
       $('#filterProceso').removeClass('hidden');
