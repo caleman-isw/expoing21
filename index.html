@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-
-    <title>Expo Ingeniería 2021</title>
+    <title>Expo Ingeniería 2021</title> //estoy hasta los webos
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -129,844 +128,238 @@
     </section>
     <!-- End Hero -->
 
-     <main id="main" style=" background-color: #ffdc00;">
+    <!-- Botones de filtros, cuadrícula y lista de proyectos aquí. -->
+    <main id="main" style=" background-color: #ffdc00;">
 
+      <!-- ======= Project grid & list section (portfolio) ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
 
- <!-- ======= MAP Projects/Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Proyectos</h2>
-          <p>Elige la categoría del proyecto al que deseas ingresar.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 justify-content-center">
-            <ul id="portfolio-flters">
-              <!-- <li data-filter="*" >All</li> -->
-              <li data-filter=".ACADEMICO" class="filter-active academico"><img class="iconos  movil-size"  style="padding-bottom: 2.4rem;" src="assets/img/Academico.png" alt="">Académico</li>
-              <li data-filter=".filter-swm" id="SWM"><img class="iconos  movil-size" style="
-               padding-bottom: 1rem;" src="assets/img/Software.png" alt="">Software y Multimedia</li>
-              <li data-filter=".PRODUCTOC1"><img class="iconos  movil-size" src="assets/img/Producto.png" alt="">Producto</li>
-              <li data-filter=".filter-proceso" id="PROCESO"><img class="iconos  movil-size" src="assets/img/Proceso.png" alt="">Proceso</li>
-            </ul>
-            <ul id="portfolio-flters" class="cat-swm">
-              <li data-filter=".SWMC1" id="swm-c1">Categoría 1</li>
-              <li data-filter=".SWMC2" id="swm-c2">Categoría 2</li>
-            </ul>
-            <ul id="portfolio-flters" class="cat-proceso">
-              <li data-filter=".PROCESOC1" id="proceso-c1">Categoría 1</li>
-              <li data-filter=".PROCESOC2" id="proceso-c2">Categoría 2</li>
-            </ul>
+          <div class="section-title">
+            <h2>Proyectos</h2>
+            <p>Elige la categoría del proyecto al que deseas ingresar.</p>
           </div>
-        </div>
 
-<div class="row projects-container">
-      <div class="col-xs-12 col-lg-3 list-project">
+          <!-- Botones filtradores -->
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <!-- <li data-filter="*" >All</li> -->
+                <li data-filter=".filter-academico" class="filter-active academico"><img class="iconos  movil-size"  style="padding-bottom: 2.4rem;" src="assets/img/Academico.png" alt="">Académico</li>
+                <li data-filter=".filter-swm"><img class="iconos  movil-size" style="padding-bottom: 1rem;" src="assets/img/Software.png" alt="">Software y Multimedia</li>
+                <li data-filter=".filter-producto"><img class="iconos  movil-size" src="assets/img/Producto.png" alt="">Producto</li>
+                <li data-filter=".filter-proceso"><img class="iconos  movil-size" src="assets/img/Proceso.png" alt="">Proceso</li>
+              </ul>
+            </div>
+          </div>
 
-       <h2 class="projects-title">Lista de proyectos</h2>
-<!-- ///////LISTA ACADÉMICOS////////////
- -->
+          <!-- Lista y cuadricula -->
+          <div class="row projects-container">
 
-          <ol class="project-list ACADEMICO">
-              <li ><span>Canales de Energía</span></li>
-              <li ><span>Suspensión Electromagnética</span></li>
-              <li ><span>Detección y separación de microplásticos del agua</span></li>
-              <li ><span>Inhibición de la corrosión con compuestos naturales</span></li>
-              <li ><span>Autumn Leaves</span></li>
-              <li ><span>Play4aChange</span></li>
-              <li ><span>BUJO Digital</span></li>
-              <li ><span>Aplicación de las 5S en el DAT CETYS Campus Ensenada, para el control de los almacenes.</span></li>
-              <li ><span>Mesa expandible</span></li>
-              <li ><span>Gender labyrinth</span></li>
-              <li ><span>Robotik'ab</span></li>
-              <li ><span>Smart trash</span></li>
-              <li ><span>Dispensador de bebidas preparadas</span></li>
-              <li ><span>PHS BC: Pumped Hydroelectric Storage, Baja California</span></li>
-            </ol>
+            <!-- Lista -->
+            <!-- Rellenar con n cantidad de <ol> que contengan la info de cada proyecto -->
+            <div class="col-xs-12 col-lg-3 list-project" id="listaProyectos">  
+              <h2 class="projects-title">Lista de proyectos</h2>
 
-           <!-- ///////LISTA SOFT/MULTIMEDIA////////////
- -->
-            <ol start = 15   class="project-list filter-swm SWMC1 list-content">
-               <p>Categoría 1</p>
-              <li ><span>Wisteria</span></li>
-              <li ><span>Botware</span></li>
-              <li ><span>Creando sonrisas a través de historias</span></li>
-              <li ><span>PaMS (Patient Management System)</span></li>
-              <li ><span>Frost Freak</span></li>
-              <li ><span>Buzi </span></li>
+              <!-- ACADÉMICOS -->
+              <ol class="project-list filter-academico">
+                <li><span>Canales de Energía</span></li>
+                <li><span>Suspensión Electromagnética</span></li>
+              </ol>
 
-            </ol>
-
-          <ol start = 37   class="project-list filter-swm SWMC2 list-content">
-                <p>Categoría 2</p>
-
-              <li ><span>GST app</span></li>
-              <li ><span>FireMap</span></li>
-              <li ><span>Página web del congreso digeek</span></li>
-              <li ><span>Página web de ExpoIngeniería</span></li>
-              <li ><span>Introducción al sistema de auditorias web</span></li>
-            </ol>
-
-            <!-- ///////LISTA PRODUCTO////////////
- -->
-            <ol start= 21   class="project-list PRODUCTOC1">
-            <p>Categoría 1</p>
-              <li ><span>Sistema Rompeolas</span></li>
-              <li ><span>Suplements Dispenser</span></li>
-              <li ><span>SmartTrash</span></li>
-              <li ><span>Coil Gun</span></li>
-              <li ><span>Diseño estructural de dron modular</span></li>
-              <li ><span>Análisis de vialidad y económica de un prototipo de columna de agua oscilante flotante para la ciudad de Ensenada, Baja California</span></li>
-              <li ><span>Intercambiador de calor</span> </li>
-              <li ><span>Biomass energy BC</span></li>
-              <li ><span>Columna de agua oscilante on-shore</span></li>
-              <li ><span>Unidad 01</span></li>
-              <li ><span>Covillave</span></li>
-              <li ><span>Startographer</span></li>
-              <li ><span>Smart Diaper</span> </li>
-
-            </ol>
-
-           <!-- ///////LISTA PROCESO////////////
- -->
-
-            <ol start = 34   class="project-list filter-proceso PROCESOC1 list-content">
+              <!-- SOFT/MULTIMEDIA -->
+              <ol start = 15 id="filterSWM" class="project-list filter-swm list-content">
                 <p>Categoría 1</p>
-              <li ><span>Sistema de regado </li>
-              <li ><span>PRO PyME (Procesos Optimizados para Pequeñas y Medianas Empresas)</li>
-              <li ><span>Rehabilitación y renovación energética de viviendas de interés social con criterios de la casa pasiva</li>
+                <li><span>Wisteria</span></li>
+                <li><span>Botware</span></li>
+              </ol>
 
-            </ol>
-
-          <ol start = 42  class="project-list filter-proceso PROCESOC2 list-content">
+              <ol start = 37 id="filterSWM" class="project-list filter-swm list-content">
                 <p>Categoría 2</p>
+                <li><span>GST app</span></li>
+                <li><span>FireMap</span></li>
+              </ol>
 
-              <li ><span>Optimización de almacenes e inventarios, caso Carl's Jr</li>
-              <li ><span>Adjustment of the 10% in the current expense for the production of the 3 part numbers of Klune´s Family</li>
-              <li ><span>Introduction of new product "GKN HUB" to CPP Ensenada for the month of May 2021</li>
-          </ol>
+              <!-- PRODUCTO -->
+              <ol start= 21 id="filterProducto" class="project-list filter-producto">
+              <p>Categoría 1</p>
+                <li><span>Sistema Rompeolas</span></li>
+                <li><span>Suplements Dispenser</span></li>
+              </ol>
 
-      </div>
+              <!-- PROCESO -->
+              <ol start = 34 id="filterProceso" class="project-list filter-proceso list-content">
+                <p>Categoría 1</p>
+                <li><span>Sistema de regado </li>
+                <li><span>PRO PyME (Procesos Optimizados para Pequeñas y Medianas Empresas)</li>
+              </ol>
 
+              <ol start = 42 id="filterProceso" class="project-list filter-proceso list-content">
+                <p>Categoría 2</p>
+                <li><span>Optimización de almacenes e inventarios, caso Carl's Jr</li>
+                <li><span>Adjustment of the 10% in the current expense for the production of the 3 part numbers of Klune´s Family</li>
+              </ol>  
 
-
-      <div class="col-xs-12 col-lg-9 text-center">
-        <img src="assets/img/map/top.png" class="img-fluid" alt="">
-        <div class="row portfolio-container">
-
-            <div class="col-lg-12 ">
-
-<!-- //////////////////////////ACADÉMICOS///////////////////// -->
-
-             <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/1.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Canales de Energía</h4>
-                  <p>Los Agrónomos Sustentables</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
             </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/2.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Suspensión Electromagnética</h4>
-                  <p>Dúo Mecánico</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
+            <!-- Cuadrícula -->
+            <div class="col-xs-12 col-lg-9 text-center">
+              <img src="assets/img/map/top.png" class="img-fluid" alt="">
 
+              <!-- Rellenar con n cantidad de <div> que contengan la info de cada proyecto -->
+              <div class="row portfolio-container" id="cuadriculaProyectos">
+                <div class="col-lg-12 ">
+
+                  <!-- ACADÉMICO -->
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-academico">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/map/cuadro-01.png" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>Canales de Energía</h4>
+                        <p>Los Agrónomos Sustentables</p>
+                        <div class="portfolio-links">
+                          <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-academico">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/map/2.png" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>Suspensión Electromagnética</h4>
+                        <p>Dúo Mecánico</p>
+                        <div class="portfolio-links">
+                          <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SOFTWARE Y MULTIMEDIA -->
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-swm">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/map/15.png" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>Wisteria</h4>
+                        <p>The Coven</p>
+                        <div class="portfolio-links">
+                          <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-swm">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/map/16.png" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>Botware</h4>
+                        <p>ENGlife</p>
+                        <div class="portfolio-links">
+                          <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PRODUCTO -->
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-producto">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/map/21.png" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>Sistema Rompeolas</h4>
+                        <p>The Hyperwaves</p>
+                        <div class="portfolio-links">
+                          <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-producto">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/map/22.png" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>Suplements Dispenser</h4>
+                        <p>Suplementos N.V</p>
+                        <div class="portfolio-links">
+                          <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PROCESO -->
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-proceso">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/map/34.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h4>Sistema de regado </h4>
+                          <p>JLET </p>
+                          <div class="portfolio-links">
+                            <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-proceso">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/map/35.png" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>PRO PyME (Procesos Optimizados para Pequeñas y Medianas Empresas)</h4>
+                        <p>Innovative Thinking </p>
+                        <div class="portfolio-links">
+                          <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-proceso">
+                      <div class=" ">
+                        <img src="assets/img/map/zorro.png" class="img-fluid" alt="">
+                      </div>
+                  </div>
+
+                </div>
               </div>
+
+              <img src="assets/img/map/grass.png" class="img-fluid" alt="">
+
             </div>
 
-            <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/3.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Detección y separación de microplásticos del agua</h4>
-                  <p>Renovatrónicos </p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/4.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Inhibición de la corrosión con compuestos naturales</h4>
-                  <p>Inhibidores de la corrosión</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/8.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Aplicación de las 5S en el DAT CETYS Campus Ensenada, para el control de los almacenes.</h4>
-                  <p>Douce Studios</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-             <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/5.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Autumn Leaves</h4>
-                  <p>Douce Studios</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-             <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/6.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Play4aChange</h4>
-                  <p>Play4aChange </p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-             <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/7.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>BUJO Digital</h4>
-                  <p>CIP</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-             <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/12.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Smart trash</h4>
-                  <p>Wall-team</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/9.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Mesa expandible</h4>
-                  <p>Mecatrónicos</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/10.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Gender Labyrinth</h4>
-                  <p>AGG</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/11.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Robotik'ab</h4>
-                  <p>TechnoTeam</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/13.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Dispensador de bebidas preparadas</h4>
-                  <p>Mecánico</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/14.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>PHS BC: Pumped Hydroelectric Storage, Baja California </h4>
-                  <p>Los Agrónomos Sustentables</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-            </div>
-
-
-              <div class="col-lg-3 col-md-6 portfolio-item ACADEMICO">
-              <div class=" ">
-                <img src="assets/img/map/zorro.png" class="img-fluid" alt="">
-              </div>
           </div>
-
 
         </div>
       </section>
-
       <!-- End Portfolio Section -->
-<!-- //////////////////////////SOFTWARE Y MULTIMEDIA/////////////////////
- -->
-         <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/15.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Wisteria</h4>
-                  <p>The Coven</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
 
-              </div>
-          </div>
+    </main>
+    <!-- Fin filtros y proyectos -->
 
     <!-- ======= CIAP Section ======= -->
     <section id="ciap" class="d-flex align-items-center">
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/16.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Botware</h4>
-                  <p>ENGlife</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-9 text-center">
+            <img src="assets/img/ciaplogo2.png" alt="" class="img-fluid logo-expo">
           </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/17.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Creando sonrisas a través de historias</h4>
-                  <p>Creando sonrisas a través de historias</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/18.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>PaMS (Patient Management System)</h4>
-                  <p>Potato Development</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/19.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>19</h4>
-                  <p>Narval Game Dev</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-                 <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/20.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>20</h4>
-                  <p>MUSK</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC2">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/37.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>GST app</h4>
-                  <p>Rocket Monkey’s</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC2">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/38.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>FireMap</h4>
-                  <p>F.D.E.</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC2">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/41.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Introducción al sistema de auditorias web</h4>
-                  <p>HAF</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC2">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/40.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Página web de ExpoIngeniería</h4>
-                  <p>ExpoIngeniería DevTeam</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-                 <div class="col-lg-3 col-md-6 portfolio-item filter-swm SWMC2">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/39.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Página web del congreso digeek</h4>
-                  <p>DIgeek DevTeam</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-swm">
-              <div class=" ">
-                <img src="assets/img/map/zorro.png" class="img-fluid" alt="">
-              </div>
-          </div>
-
-
-
-
-
-
-
-
-
-<!-- //////////////////////////PRODUCTO/////////////////////
- -->
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class=" ">
-                <img src="assets/img/map/zorro.png" class="img-fluid" alt="">
-              </div>
-          </div>
-
-
-         <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/21.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Sistema Rompeolas</h4>
-                  <p>The Hyperwaves</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/22.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Suplements Dispenser</h4>
-                  <p>Suplementos N.V</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/23.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>SmartTrash</h4>
-                  <p>Wall Team</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/24.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Coil Gun</h4>
-                  <p>Coil Gun</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/26.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Análisis de vialidad y económica de un prototipo de columna de agua oscilante...</h4>
-                  <p>WAVENGY</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-         <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/25.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Diseño estructural de dron modular</h4>
-                  <p>CHAAC</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/27.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Intercambiador de calor </h4>
-                  <p>Sinergia Confort</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/28.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Biomass energy BC</h4>
-                  <p>Biomass energy BC</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/30.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Unidad 01</h4>
-                  <p>DEA</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/29.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Columna de agua oscilante on-shore</h4>
-                  <p>OWC On-shore</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-        <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/31.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Covillave</h4>
-                  <p>Covihelpers</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/32.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Startographer</h4>
-                  <p>Startographer Group</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/33.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Smart Diaper </h4>
-                  <p>Los Proteous</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-            <div class="col-lg-3 col-md-6 portfolio-item PRODUCTOC2">
-              <div class=" ">
-                <img src="assets/img/map/zorro.png" class="img-fluid" alt="">
-              </div>
-          </div>
-
-<!-- //////////////////////////PROCESO/////////////////////
- -->
-         <div class="col-lg-3 col-md-6 portfolio-item filter-proceso PROCESOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/34.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Sistema de regado </h4>
-                  <p>JLET </p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-proceso PROCESOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/35.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>PRO PyME (Procesos Optimizados para Pequeñas y Medianas Empresas)</h4>
-                  <p>Innovative Thinking </p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-proceso PROCESOC1">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/36.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Rehabilitación y renovación energética de viviendas de interés social con criterios de la casa pasiva</h4>
-                  <p>Rehabilitación VIS</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-proceso PROCESOC2">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/42.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Optimización de almacenes e inventarios, caso Carl's Jr</h4>
-                  <p>Los industriales</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-proceso PROCESOC2">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/43.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Adjustment of the 10% in the current expense for the production of the 3 part numbers of Klune´s Family</h4>
-                  <p>Nave 1 - Finish Grinding</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-
-        <div class="col-lg-3 col-md-6 portfolio-item filter-proceso PROCESOC2">
-              <div class="portfolio-wrap">
-                <img src="assets/img/map/44.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Introduction of new product "GKN HUB" to CPP Ensenada for the month of May 2021</h4>
-                  <p>INTRODUCTION OF GKN HUB TO CPP ENSENADA</p>
-                  <div class="portfolio-links">
-                   <a href="proyecto.html" title="Conocer más"><i class="icon-arrow-right-circle"></i></a>
-                </div>
-                </div>
-
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-proceso PROCESOC2">
-              <div class=" ">
-                <img src="assets/img/map/zorro.png" class="img-fluid" alt="">
-              </div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item PROCESOC1">
-              <div class=" ">
-                <img src="assets/img/map/zorro.png" class="img-fluid" alt="">
-              </div>
-          </div>
-
         </div>
-        </div>
-        <img src="assets/img/map/grass.png" class="img-fluid" alt="">
-</div>
-</div>
-      </div>
-    </section><!-- End Portfolio Section -->
 
-
-  </main><!-- End #main -->
-
-
-<!-- ======= Hero Section ======= -->
-  <section id="ciap" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-      <div class="row justify-content-center">
-        <div class="col-xl-7 col-lg-9 text-center">
-          <img src="assets/img/ciaplogo2.png" alt="" class="img-fluid logo-expo">
+        <div class="text-center">
+          <a href="#" class="btn-get-started  rounded-pill scrollto">Regístrate Ahora</a>
         </div>
       </div>
-      <div class="text-center">
-        <a href="#" class="btn-get-started  rounded-pill scrollto">Regístrate Ahora</a>
-      </div>
 
+    </section>
+    <!-- End CIAP -->
 
-
-
-  <!-- ======= Footer ======= -->
-<footer id="footer">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
 
     <div class="container  py-4">
       <div class="row justify-content-center">
@@ -983,59 +376,51 @@
           <img src="assets/img/ciap.png" alt="" class="img-fluid logo-expo">
         </div>
       </div>
-    <div class="row justify-content-center">
-      <div class="mr-md-auto mt-5 text-center text-md-left">
-       <!--  <div class="copyright">
-          &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
-        </div> -->
       <div class="row justify-content-center">
         <div class="mr-md-auto mt-5 text-center text-md-left">
           <!--  <div class="copyright">
               &copy; Copyright <strong><span>OnePage</span></strong>. All Rights Reserved
             </div> -->
             <div class="social-links pt-3 pt-md-0">
-        <div class="social-links pt-3 pt-md-0">
 
-        <a href="#" class="facebook"> <i class="fab fa-facebook fa-2x fa-fw footer-text"></i></a>
-        <a href="#" class="instagram"><i class="fab fa-instagram fa-2x fa-fw footer-text"></i></a>
+            <a href="#" class="facebook"> <i class="fab fa-facebook fa-2x fa-fw footer-text"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram fa-2x fa-fw footer-text"></i></a>
 
-      </div>
-    </div>
-
-
-      </div>
-    </div>
-    </div>
-
-
-<div class="credits text-center">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
-          <a style="color:gray" href="https://bootstrapmade.com/">Made with Bootstrap</a>
+          </div>
         </div>
+      </div>
+    </div>
 
-  </footer> <!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
-  <div id="preloader"></div>
+    <div class="credits text-center">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/ -->
+      <a style="color:gray" href="https://bootstrapmade.com/">Made with Bootstrap</a>
+    </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+    </footer>
+    <!-- End Footer -->
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+    <div id="preloader"></div>
 
-</body>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
 
 </html>
