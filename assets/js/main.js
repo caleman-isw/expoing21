@@ -212,10 +212,9 @@
       type: "GET",
       url: "assets/php/RequestLista.php",
       dataType: "html",
-      asyn: false,
+      async: false,
       success: function (response) {
         $("#listaProyectos").html(response);
-        alert(response);
       },
     });
 
@@ -223,21 +222,21 @@
       type: "GET",
       url: "assets/php/RequestCuadricula.php",
       dataType: "html",
-      asyn: false,
+      async: false,
       success: function (response) {
         $("#cuadriculaProyectos").html(response);
-        alert(response);
       },
     });
 
-    //================================================
-
-    // Esconder todo menos academico
+    //Resetear filtros
+    $("#filterSWM").addClass("hidden");
     $(".filter-swm").addClass("hidden");
+    $("#filterProducto").addClass("hidden");
     $(".filter-producto").addClass("hidden");
+    $("#filterProceso").addClass("hidden");
     $(".filter-proceso").addClass("hidden");
-    $(".cat-swm").addClass("hidden");
-    $(".cat-proceso").addClass("hidden");
+
+    //Declarar apuntadores a contenedores por filtrar
 
     var projectGrid = $(".portfolio-container").isotope({
       itemSelector: ".portfolio-item",
@@ -247,8 +246,9 @@
       itemSelector: ".project-list",
     });
 
+    //Al hacer clic en el cuadro de una sección...
     $("#portfolio-flters li").on("click", function () {
-      // Resetear filtros
+      //Resetear los filtros
       $(".filter-swm").removeClass("hidden");
       $(".filter-producto").removeClass("hidden");
       $(".filter-proceso").removeClass("hidden");
@@ -281,6 +281,7 @@
       projectGrid.isotope({
         filter: $(this).data("filter"),
       });
+      
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
@@ -288,17 +289,14 @@
       $(".venobox").venobox({
         share: false,
       });
+      
+      window.setTimeout(function () {
+        $("#ACADEMICO_BUTTON").trigger("click");
+      }, 100);
+      
+
     });
-
     aos_init();
-  });
-
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1,
   });
 
   // Init AOS
@@ -308,4 +306,13 @@
       once: true,
     });
   }
+
+  // Portfolio details carousel
+  $(".portfolio-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1,
+  });
+
 })(jQuery);
