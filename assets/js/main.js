@@ -238,6 +238,14 @@
       aos_init();
     });
 
+      // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function() {
+      $('.venobox').venobox({
+        'share': false
+      });
+    });
+  });
+
 
   //Inicialización de filtros y demás
   $(window).on('load', function() {
