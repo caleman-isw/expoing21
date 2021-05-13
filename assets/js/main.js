@@ -230,6 +230,15 @@
           $('.cat-proceso').addClass('hidden');
       }
 
+          portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+
+
+      aos_init();
+    });
+
+
   //Inicialización de filtros y demás
   $(window).on('load', function() {
 
@@ -264,6 +273,8 @@
      $('.filter-producto').addClass('hidden');
      $('#filterProceso').addClass('hidden');
      $('.filter-proceso').addClass('hidden');
+
+
     
     //Declarar apuntadores a contenedores por filtrar
 
