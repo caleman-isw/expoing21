@@ -208,8 +208,6 @@
 
   //Inicialización de filtros y demás
   $(window).on("load", function () {
-    aos_init();
-
     $.ajax({
       type: "GET",
       url: "assets/php/RequestLista.php",
@@ -251,16 +249,28 @@
     //Al hacer clic en el cuadro de una sección...
     $("#portfolio-flters li").on("click", function () {
       //Resetear los filtros
-      $("#filterSWM").removeClass("hidden");
       $(".filter-swm").removeClass("hidden");
-      $("#filterProducto").removeClass("hidden");
       $(".filter-producto").removeClass("hidden");
-      $("#filterProceso").removeClass("hidden");
       $(".filter-proceso").removeClass("hidden");
       $("#portfolio-flters li").removeClass("filter-active");
 
       //Actualizar filtro activo
       $(this).addClass("filter-active");
+
+      // Para determinar que categoria esta seleccionada
+      var id = $(this).attr("id");
+
+      if (id == "SWM" || id == "swm-c1" || id == "swm-c2") {
+        $(".cat-swm").removeClass("hidden");
+      } else {
+        $(".cat-swm").addClass("hidden");
+      }
+
+      if (id == "PROCESO" || id == "proceso-c1" || id == "proceso-c2") {
+        $(".cat-proceso").removeClass("hidden");
+      } else {
+        $(".cat-proceso").addClass("hidden");
+      }
 
       //Filtrar lista
       projectList.isotope({
@@ -271,6 +281,7 @@
       projectGrid.isotope({
         filter: $(this).data("filter"),
       });
+      
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
@@ -278,11 +289,14 @@
       $(".venobox").venobox({
         share: false,
       });
-
+      
       window.setTimeout(function () {
         $("#ACADEMICO_BUTTON").trigger("click");
       }, 100);
+      
+
     });
+    aos_init();
   });
 
   // Init AOS
@@ -292,4 +306,13 @@
       once: true,
     });
   }
+
+  // Portfolio details carousel
+  $(".portfolio-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1,
+  });
+
 })(jQuery);
