@@ -696,7 +696,7 @@ ol>li:before {
   color: black;
 }
 
-.refLista:hover{
+.refLista:hover {
   color: #00a3ff;
 }
 
@@ -1089,11 +1089,11 @@ ol>li:before {
 
 .grid-text {
   position: absolute;
-  top: 43%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 180%;
+  font-size: 288%;
   font-weight: bold;
   font-family: montserrat;
 }
