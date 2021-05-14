@@ -5,6 +5,8 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -547,13 +549,6 @@ table .btn-primary {
 .btn-primary:hover {
   background-color: #00a3ff;
   border-color: transparent;
-}
-
-.container {
-}
-
-h4 {
-  /*margin: 2rem 0rem 1rem;*/
 }
 
 section {

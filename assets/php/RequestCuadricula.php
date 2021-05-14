@@ -8,11 +8,11 @@ echo "<div class=\"col-lg-12\">";
 
 while ($data = mysqli_fetch_assoc($result)) {
 
-    echo   "<div class=\"col-lg-3 portfolio-item filter-" . $data['filtro'] . "\">
+    echo   "<div class=\"col-lg-3 portfolio-item " . $data['filtro'] . "\">
                 <div class=\"portfolio-wrap\">
                     <div class=\"image-container\">
                         <img src=\"assets/img/map/1.png\" class=\"img-fluid\" alt=\"\">
-                        <div class=\"grid-text\">123</div>
+                        <div class=\"grid-text\">" . $data['idProyecto'] . "</div>
                     </div>
                     <div class=\"portfolio-info\">
                         <h4>" . $data['nombre'] . "</h4>
