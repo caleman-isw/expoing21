@@ -712,6 +712,7 @@ ol>li:before {
 .portfolio-container {
   background-color: white;
   border-radius: 34px;
+  padding-top: 16px;
 }
 
 .projects-container {
