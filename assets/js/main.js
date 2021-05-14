@@ -14,6 +14,7 @@
         .delay(100)
         .fadeOut("slow", function () {
           $(this).remove();
+          fix();
         });
     }
   });
@@ -283,10 +284,6 @@
       $(".venobox").venobox({
         share: false,
       });
-
-      window.setTimeout(function () {
-        $(".academico").trigger("click");
-      }, 150);
     });
     aos_init();
   });
@@ -297,6 +294,12 @@
       duration: 1000,
       once: true,
     });
+  }
+
+  function fix() {
+    window.setTimeout(function () {
+      $(".academico").trigger("click");
+    }, 50);
   }
 
   // Portfolio details carousel
