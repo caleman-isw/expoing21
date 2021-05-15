@@ -5,6 +5,8 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -549,13 +551,6 @@ table .btn-primary {
   border-color: transparent;
 }
 
-.container {
-}
-
-h4 {
-  /*margin: 2rem 0rem 1rem;*/
-}
-
 section {
   padding: 80px 0;
   overflow: hidden;
@@ -679,7 +674,7 @@ li span {
   padding:0;
   counter-reset:item;
 }
- 
+
 ol>li {
   margin:0;
   padding:0 0 0 2em;
@@ -687,7 +682,7 @@ ol>li {
   list-style-type:none;
   counter-increment:item;
 }
- 
+
 ol>li:before {
   display:inline-block;
   width:1.5em;
@@ -696,6 +691,14 @@ ol>li:before {
   text-align:right;
   content:counter(item) ".";
 }*/
+
+.refLista {
+  color: black;
+}
+
+.refLista:hover {
+  color: #00a3ff;
+}
 
 .projects-title {
   font-size: 32px;
@@ -717,6 +720,7 @@ ol>li:before {
 .portfolio-container {
   background-color: white;
   border-radius: 34px;
+  padding-top: 16px;
 }
 
 .projects-container {
@@ -1085,11 +1089,11 @@ ol>li:before {
 
 .grid-text {
   position: absolute;
-  top: 43%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 180%;
+  font-size: 288%;
   font-weight: bold;
   font-family: montserrat;
 }
