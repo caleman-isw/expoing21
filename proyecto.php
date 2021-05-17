@@ -275,6 +275,7 @@ header("Access-Control-Allow-Origin: *");
             
 
           <div class="col-sm-12  align-content-center text-center">
+<<<<<<< HEAD:proyecto.php
 
 	<?php
 		if($proyecto["url"] != "NULL"){
@@ -295,6 +296,14 @@ header("Access-Control-Allow-Origin: *");
 
           
 
+=======
+          <a href="https://meet.google.com/ccz-oxso-tpe"><img src="assets/img/aviso_meet.png" class="img-fluid">
+              
+					<p class="lead mb-0" style="margin-top: 23pt">https://meet.google.com/ccz-oxso-tpe</p>
+                
+               
+            </a>
+>>>>>>> ba4b6a73bb5751603f022f6ccb980ea241acc209:proyecto.html
         </div>
 
           </div>
@@ -385,6 +394,7 @@ header("Access-Control-Allow-Origin: *");
            
 		<?php
 
+<<<<<<< HEAD:proyecto.php
 		$id = $proyecto['idProyecto'];
 		$query = "SELECT * FROM integrante where idProyecto = '$id'";
 		$res = mysqli_query($con, $query);
@@ -392,11 +402,22 @@ header("Access-Control-Allow-Origin: *");
 			
 		  $name = getPicture();
                   echo "<div class=\"col-lg-3 container-img p-2\"  >
+=======
+                   <div class="col-lg-3 container-img p-2"  >
+                      <a href="#"  ><img src="assets/img/industrial-user.png">
+                          <div class="card-img-overlay d-flex justify-content-center ">
+                              </div>
+						  <h5 class="card-title text-center" style="margin-top: 15pt">Sandra Medina</h5>
+ 						 
+                      </a>
+                   </div> 
+>>>>>>> ba4b6a73bb5751603f022f6ccb980ea241acc209:proyecto.html
 
                       <img src=\"assets/img/". $name . "-user.png\">
 
                           <div class=\"card-img-overlay d-flex justify-content-center \">
 
+<<<<<<< HEAD:proyecto.php
                               </div>
 
 				<h5 class=\"card-title text-center\" style=\"margin-top: 15pt;\">" . $data["nombre"] . "</h5>
@@ -411,6 +432,34 @@ header("Access-Control-Allow-Origin: *");
 
 		?>
 
+=======
+           
+                    <div class=" col-lg-3 container-img p-2"  >
+                           <a href="#"><img src="assets/img/idgd-user.png">
+                              <div class="card-img-overlay d-flex justify-content-center ">
+                                </div>
+							   <h5 class="card-title text-center" style="margin-top: 15pt">Paula Flores</h5>
+                      </a>
+                    </div>
+
+                    <div class=" col-lg-3 container-img p-2 " >
+                      <a href="#"><img src="assets/img/software-user.png"	>
+                          <div class="card-img-overlay d-flex justify-content-center ">
+                               </div>
+						  <h5 class="card-title text-center" style="margin-top: 15pt">Ricardo Vega</h5>
+                      </a>               
+                    </div>
+                    <div class="col-lg-3 container-img  p-2"  >
+                       <a href="#"><img src="assets/img/idgd-user.png">
+                          <div class="card-img-overlay d-flex justify-content-center">
+                            </div>
+						   <h5 class="card-title text-center" style="margin-top: 15pt">Armando Ruiz</h5>
+                      </a>
+
+                    </div> 
+		  
+                 
+>>>>>>> ba4b6a73bb5751603f022f6ccb980ea241acc209:proyecto.html
       </div>
 
     
