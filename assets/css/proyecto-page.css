@@ -1,345 +1,689 @@
 
+
 body {
+
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
 
+
+
 h1,
+
 h2,
+
 h3,
+
 h4,
+
 h5,
+
 h6 {
+
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   font-weight: 700;
+
 }
+
+
+
+
 
 
 
 h1.seccion-subtitulo{
+
     font-weight: 500;
+
 }
+
+
 
 .bg-primary, .btn-outline-secondary:hover   {
+
  background-color: #ffdc00 !important;  
+
 /*	Este CAMBIA LA BARRA DE ARRIBA UWU*/
+
      
+
 }
+
+
 
 .bg-secondary{
+
     background-color: #00A3FF !important;
+
 }
 
+
+
 .bg-dark{
+
     background-color:black !important; /*CAMBIA COLOR EL FOOTER*/
+
 }
+
+
 
  
 
+
+
 .btn-primary {
+
   background-color: #ffdc00 !important; 
+
   color: #ffdc00 !important;
+
   padding-left: 1rem;
+
   padding-right: 1rem;
+
 }
+
+
 
 .btn-search {
+
     background-color: #00A3FF;
+
     color: white;
+
     border-radius: 50rem;
+
 }
+
+
 
 .btn-outline-light {
+
     color: #FFFFFF;
+
     border-color: #FFFFFF;
+
     border-radius: 50rem;
+
 }
+
+
 
 .btn-outline-primary{
+
     color: #FFFFFF;
+
     border-color: #856900;
+
 }
+
+
 
 .text-primary, a.text-primary {
+
  color: #856900 !important;   
+
      
+
 }
+
+
 
  .text-primary a {
+
  color: #ffdc00 !important;   
+
      
+
 }
+
+
 
 .form-control-lg {
+
 /*    height: calc(1.5em + 1rem + 2px);
+
     padding: .5rem 1rem;
+
     font-size: 1.25rem;
+
     line-height: 1.5;*/
+
     border-radius: 50rem;
+
 }
+
+
 
 header.masthead {
+
   position: relative;
+
   background-color: #343a40;
+
   background: url("../img/cetys-universidad3.jpg") no-repeat center center;
+
   background-size:cover;
+
   padding-top: 8rem;
+
   padding-bottom: 8rem;
+
 }
+
+
 
 header.masthead .overlay {
+
   position: absolute;
+
   background-color: #212529;
+
   height: 100%;
+
   width: 100%;
+
   top: 0;
+
   left: 0;
+
   opacity: 0.3;
+
 }
+
+
 
 header.masthead h1 {
+
   font-size: 2rem;
+
 }
+
+
 
 @media (min-width: 768px) {
+
   header.masthead {
+
     padding-top: 12rem;
+
     padding-bottom: 12rem;
+
   }
+
   header.masthead h1 {
+
     font-size: 3rem;
+
   }
+
 }
 
+
+
 .explore .explore-text {
+
   padding: 3rem;
 }
 
 
+
+
+
 /*background explore images*/
+
 /*
+
 .explore .explore-img {
+
   min-height: 15rem;
+
   background-size: cover;
+
 }
+
 */
 
 
+
+
+
 .explore .explore-img {
+
    overflow: hidden;
+
 }
+
+
+
 
 
  .vinplan-img img{
+
   object-fit: cover;
+
   width: 100%;
 
+
+
   border-radius: 10px;
+
 }
+
+
 
 .no-border img{
+
     border: none;
+
     border-radius: 0px;
+
 }
+
+
 
  .wineExp .vinplan-img  img{
+
   object-fit: cover;
+
   width: 100%;
+
    height: 200px;
+
   border-radius: 10px;
+
 }
+
+
 
 @media (min-width: 992px) {
+
   .wineExp .vinplan-img  img{
+
     height: 400px;
+
   }
+
 }
 
+
+
  .events .vinplan-img  img{
+
   object-fit: cover;
+
   width: 100%;
+
   height: 200px;
+
   border-radius: 10px;
+
 }
+
+
 
  
 
+
+
 @media (min-width: 768px) {
+
   .explore .explore-text {
+
     padding: 7rem;
+
   }
+
 }
 
+
+
 .features-icons {
+
   padding-top: 7rem;
+
   padding-bottom: 7rem;
+
 }
+
+
+
 
 
  .features-icons-item .features-icons-icon i {
+
   font-size: 4.5rem;
+
 }
 
+
+
  .features-icons-item:hover .features-icons-icon i {
+
   font-size: 5rem;
+
 }
+
+
+
 
 
 .cover-container {
+
     height: 20rem;
+
     width: 100%;
+
     white-space: nowrap;
+
     overflow-x: scroll;
+
     overflow-y: hidden;
+
 }
+
 .cover-item {
+
     position: relative;
+
     display: inline-block;
+
     margin: 8px 8px;
+
     box-shadow: 2px 2px 4px #bbb;
+
     border-radius: 10px;
+
     width: 200px;
+
     height: 158px;
+
     vertical-align: bottom;
+
     background-position: top left;
+
     background-repeat: no-repeat;
+
     background-size: cover;
+
 }
+
+
+
 
 
 @media (max-width: 768px) {
+
 .btn-sm-block {
+
     display: block;
+
     width: 100%; 
+
 }
+
 }
+
+
 
 .btn-sign-up{
+
     background-color: #fff;
+
 }
+
+
+
 
 
 @media (max-width: 768px) {
+
     .card {
+
         height: 18rem;
+
     }
+
 }
+
+
+
 
 
 .card-2 {
+
     height: 26rem;
+
     margin: 0.6rem;
+
 }
+
+
+
 
 
 .card-rate {
+
     height: 15rem;
+
     margin: 0.6rem;
+
     background-color:  #f8f9fa;
+
     border-radius: 15px;
+
     border-width: medium;
+
     border-color: #856900;
+
 }
+
+
+
+
 
 
 
 .carousel-item{ 
+
 max-height: 30rem;
+
    
+
 }
 
+
+
 @media (min-width: 576px){
+
 .card-deck {
+
     display: -ms-flexbox;
+
     display: inline-flex;
+
   flex-flow: nowrap;
+
     margin-right: -15px;
+
     margin-left: -15px;
+
     box-sizing: content-box;
+
 }
+
 }
+
 /*
+
     .carousel-item {
+
         position: relative;
+
         display:inline-block; 
+
         float: none;
+
         width: 100%;
+
         margin-right: 0;
 
 
+
+
+
     }
+
 */
 
 
+
+
+
 .testimonials {
+
   padding-top: 7rem;
+
   padding-bottom: 7rem;
+
 }
+
+
 
 .testimonials .testimonial-item {
+
   max-width: 18rem;
+
 }
+
+
 
 .testimonials .testimonial-item img {
+
   max-width: 12rem;
+
   box-shadow: 0px 5px 5px 0px #adb5bd;
+
 }
+
+
 
 .users img {
+
   max-width: 12rem;
+
   box-shadow: 0px 5px 5px 0px #adb5bd;
+
 }
+
+
 
 .call-to-action {
+
   position: relative;
+
   background-color: #343a40;
+
   background: url("../img/bg-masthead.jpg") no-repeat center center;
+
   background-size: cover;
+
   padding-top: 7rem;
+
   padding-bottom: 7rem;
+
 }
+
+
 
 .call-to-action .overlay {
+
   position: absolute;
+
   background-color: #212529;
+
   height: 100%;
+
   width: 100%;
+
   top: 0;
+
   left: 0;
+
   opacity: 0.3;
+
 }
+
+
 
 footer.footer {
+
   padding-top: 4rem;
+
   padding-bottom: 4rem;
+
 }
 
+
+
 .footer-text {
+
     color: #00a3ff;
+
 }
+
+
 
 .footer-text:hover {
+
     color: #856900;
+
 }
+
+
 
 .footer-text {
+
     margin-top: 
+
 }
+
+
 
 .display {
+
     font-weight:300;
+
 }
+
+
 
 .form-footer {
+
     background-color: transparent;
+
     
+
     border-bottom-color: #979797;
+
 }
+
+
 
 .input-foot {
+
    background-color: #856900;
+
     border-color: transparent;
+
 }
 
+
+
 .icon-star{
+
     color:#856900 !important; 
+
 }
+

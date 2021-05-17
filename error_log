@@ -1,0 +1,16 @@
+[16-May-2021 02:40:36 America/Mexico_City] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home4/expoinge/public_html/showcase/proyecto.php on line 377
+[16-May-2021 02:42:37 America/Mexico_City] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home4/expoinge/public_html/showcase/proyecto.php on line 377
+[16-May-2021 02:47:40 America/Mexico_City] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home4/expoinge/public_html/showcase/proyecto.php on line 377
+[16-May-2021 02:49:25 America/Mexico_City] PHP Parse error:  syntax error, unexpected '<' in /home4/expoinge/public_html/showcase/proyecto.php on line 382
+[16-May-2021 02:51:33 America/Mexico_City] PHP Parse error:  syntax error, unexpected '<' in /home4/expoinge/public_html/showcase/proyecto.php on line 381
+[16-May-2021 02:52:31 America/Mexico_City] PHP Parse error:  syntax error, unexpected '<' in /home4/expoinge/public_html/showcase/proyecto.php on line 381
+[16-May-2021 02:53:08 America/Mexico_City] PHP Parse error:  syntax error, unexpected '<' in /home4/expoinge/public_html/showcase/proyecto.php on line 381
+[16-May-2021 02:53:12 America/Mexico_City] PHP Parse error:  syntax error, unexpected '<' in /home4/expoinge/public_html/showcase/proyecto.php on line 381
+[16-May-2021 02:57:43 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'col' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/proyecto.php on line 381
+[16-May-2021 02:58:29 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ';' or ',' in /home4/expoinge/public_html/showcase/proyecto.php on line 385
+[16-May-2021 02:59:50 America/Mexico_City] PHP Parse error:  syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home4/expoinge/public_html/showcase/proyecto.php on line 389
+[16-May-2021 03:05:55 America/Mexico_City] PHP Parse error:  syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home4/expoinge/public_html/showcase/proyecto.php on line 389
+[16-May-2021 13:32:51 America/Mexico_City] PHP Parse error:  syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home4/expoinge/public_html/showcase/proyecto.php on line 254
+[16-May-2021 13:33:23 America/Mexico_City] PHP Parse error:  syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home4/expoinge/public_html/showcase/proyecto.php on line 254
+[16-May-2021 13:44:13 America/Mexico_City] PHP Parse error:  syntax error, unexpected '<' in /home4/expoinge/public_html/showcase/proyecto.php on line 256
+[16-May-2021 13:53:48 America/Mexico_City] PHP Parse error:  syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home4/expoinge/public_html/showcase/proyecto.php on line 283

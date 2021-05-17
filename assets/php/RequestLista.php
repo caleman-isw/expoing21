@@ -1,37 +1,171 @@
 <?php
 
+
+
 require "conexion.php";
 
+
+
+echo "<h2 class=\"projects-title\">Lista de proyectos</h2>";
+
+
+
 #Lista de académicos
-$result = mysqli_query($con, "SELECT * FROM proyecto where tipoProyecto like '1%'");
-$abbreviation = "academico";
-$numProyecto = 1;
 
-echo "<ol start = ". $numProyecto . "  id =\"filteracademico\" class=\"project-list filter-academico list-content\">";
+$result = mysqli_query($con, "SELECT * FROM proyecto where filtro LIKE 'academico%'");
 
-while($data = mysqli_fetch_assoc($result)){
-  echo "<li><span>" . $data['nombre'] . "</span></li>";
-  }
+echo "<ol id =\"filterAcademico\" class=\"project-list ACADEMICO\">";
+
+while($data = mysqli_fetch_assoc($result))
+
+{
+
+  echo "<li value=\"" . $data['idProyecto'] . "\">
+			<form method=\"POST\" >
+				<button class=\"redirect-button refLista text-left\" style=\"background-color: transparent; border: none;\" type=\"submit\" name=\"id\" value=". $data['idProyecto'] .">" . $data['nombre'] . "</button>
+			</form>
+		</li>";
+}
+
 echo "</ol>";
 
-#Lista de Producto
-$abbreviation = "producto";
-$result = mysqli_query($con, "SELECT * FROM proyecto where tipoProyecto like '2%'");
 
-echo "<ol start = ". $numProyecto . "  id =\"filterproducto\" class=\"project-list filter-producto list-content\">";
 
-  while($data = mysqli_fetch_assoc($result)){
-    echo "<li><span>" . $data['nombre'] . "</span></li>";
-    }
+#Lista de SWMC1
+
+$result = mysqli_query($con, "SELECT * FROM proyecto where filtro LIKE '%swmc1%'");
+
+
+
+echo "<ol id =\"filterSWM\" class=\"project-list SWMC1 list-content\">";
+
+while($data = mysqli_fetch_assoc($result))
+
+{
+
+  echo "<li value=\"" . $data['idProyecto'] . "\">
+
+                      <form method=\"POST\">
+              <button class=\"redirect-button refLista\" style=\"background-color: transparent; border: none;\" type=\"submit\" name=\"id\" value=". $data['idProyecto'] .">" . $data['nombre'] . "</button>
+            </form>
+
+        </li>";
+
+}
+
 echo "</ol>";
 
-#Lista de Proceso
-$result = mysqli_query($con, "SELECT * FROM proyecto where tipoProyecto like '3%'");
 
-echo "<ol start = ". $numProyecto . "  id =\"filterproceso\" class=\"project-list filter-proceso list-content\">";
 
-  while($data = mysqli_fetch_assoc($result)){
-    echo "<li><span>" . $data['nombre'] . "</span></li>";
-    }
+#Lista de SWMC2
+
+$result = mysqli_query($con, "SELECT * FROM proyecto where filtro LIKE '%SWMC2%'");
+
+
+
+echo "<ol id =\"filterSWM\" class=\"project-list SWMC2 list-content\">";
+
+while($data = mysqli_fetch_assoc($result))
+
+{
+
+  echo "<li value=\"" . $data['idProyecto'] . "\">
+
+                      <form method=\"POST\">
+              <button class=\"redirect-button refLista\" style=\"background-color: transparent; border: none;\" type=\"submit\" name=\"id\" value=". $data['idProyecto'] .">" . $data['nombre'] . "</button>
+            </form>
+
+        </li>";
+
+}
+
 echo "</ol>";
+
+
+
+
+
+#Lista de PRODUCTOC1
+
+$result = mysqli_query($con, "SELECT * FROM proyecto where filtro LIKE '%PRODUCTOC1%'");
+
+
+
+echo "<ol id =\"filterProducto\" class=\"project-list PRODUCTOC1\">";
+
+while($data = mysqli_fetch_assoc($result))
+
+{
+
+  echo "<li value=\"" . $data['idProyecto'] . "\">
+
+                      <form method=\"POST\">
+              <button class=\"redirect-button refLista\" style=\"background-color: transparent; border: none;\" type=\"submit\" name=\"id\" value=". $data['idProyecto'] .">" . $data['nombre'] . "</button>
+            </form>
+
+        </li>";
+
+
+
+}
+
+echo "</ol>";
+
+
+
+
+
+#Lista de PROCESOC1
+
+$result = mysqli_query($con, "SELECT * FROM proyecto where filtro LIKE '%PROCESOC1%'");
+
+
+
+echo "<ol id =\"filterProceso\" class=\"project-list PROCESOC1 list-content\">";
+
+while($data = mysqli_fetch_assoc($result))
+
+{
+
+  echo "<li value=\"" . $data['idProyecto'] . "\">
+
+                      <form method=\"POST\">
+              <button class=\"redirect-button refLista\" style=\"background-color: transparent; border: none;\" type=\"submit\" name=\"id\" value=". $data['idProyecto'] .">" . $data['nombre'] . "</button>
+            </form>
+
+        </li>";
+
+}
+
+echo "</ol>";
+
+
+
+#Lista de PROCESOC2
+
+$result = mysqli_query($con, "SELECT * FROM proyecto where filtro LIKE '%PROCESOC2%'");
+
+
+
+echo "<ol id =\"filterProceso\" class=\"project-list PROCESOC2 list-content\">";
+
+while($data = mysqli_fetch_assoc($result))
+
+{
+
+  echo "<li value=\"" . $data['idProyecto'] . "\">
+
+                      <form method=\"POST\">
+              <button class=\"redirect-button refLista\" style=\"background-color: transparent; border: none;\" type=\"submit\" name=\"id\" value=". $data['idProyecto'] .">" . $data['nombre'] . "</button>
+            </form>
+
+        </li>";
+
+}
+
+echo "</ol>";
+
+
+
 ?>
+

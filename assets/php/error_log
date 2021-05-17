@@ -1,0 +1,10 @@
+[16-May-2021 01:44:57 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'redirects' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 57
+[16-May-2021 01:45:07 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'redirects' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 57
+[16-May-2021 01:46:59 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'redirects' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestLista.php on line 25
+[16-May-2021 01:47:00 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'redirects' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 57
+[16-May-2021 01:47:45 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'redirects' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 57
+[16-May-2021 01:48:29 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'redirects' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 57
+[16-May-2021 01:49:33 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'redirect' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 59
+[16-May-2021 01:53:20 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'border' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 59
+[16-May-2021 01:53:27 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'border' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 59
+[16-May-2021 02:10:40 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'background' (T_STRING), expecting ';' or ',' in /home4/expoinge/public_html/showcase/assets/php/RequestCuadricula.php on line 59
