@@ -1,31 +1,30 @@
-<?php 
+<?php
 
 session_start();
 
 
 
-  require "assets/php/conexion.php";
+require "assets/php/conexion.php";
 
-  //include("assets/php/functions.php");
+//include("assets/php/functions.php");
 
 
 
-  if($_SERVER['REQUEST_METHOD'] == "POST"){
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    $id = $_POST["id"];
+  $id = $_POST["id"];
 
-    // $query = "select * from proyecto where idProyecto = '$id' limit 1";
+  // $query = "select * from proyecto where idProyecto = '$id' limit 1";
 
-    // $proyectoInfo = mysqli_query($con, $query);
+  // $proyectoInfo = mysqli_query($con, $query);
 
-    // $proyectID = mysqli_fetch_assoc($proyectoInfo);
+  // $proyectID = mysqli_fetch_assoc($proyectoInfo);
 
-    $_SESSION["id"] = $id;
+  $_SESSION["id"] = $id;
 
-    header("Location: proyecto.php");
+  header("Location: proyecto.php");
 
-    die;
-
+  die;
 }
 
 
@@ -38,65 +37,65 @@ session_start();
 
 
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-
-
-    <title>Expo Ingeniería 2021</title>
-
-    <meta content="" name="description">
-
-    <meta content="" name="keywords">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 
 
-    <!-- Favicons -->
+  <title>Expo Ingeniería 2021</title>
 
-    <link href="assets/img/favicon.png" rel="icon">
+  <meta content="" name="description">
 
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-
-
-    <!-- Google Fonts -->
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-    <link href="assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <meta content="" name="keywords">
 
 
 
-    <!-- Vendor CSS Files -->
+  <!-- Favicons -->
 
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/img/favicon.png" rel="icon">
 
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 
 
-    <!-- Template Main CSS File -->
+  <!-- Google Fonts -->
 
-    <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
 
 
 
-    <!-- =======================================================
+  <!-- Vendor CSS Files -->
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+
+
+  <!-- Template Main CSS File -->
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+  <!-- =======================================================
 
     * Template Name: OnePage - v2.2.2
 
@@ -124,15 +123,11 @@ session_start();
 
 
 
-      <a class="navbar-brand js-scroll-trigger" href="#"><img src="assets/img/cetysinternacional-black.png"
-
-          style="width: 20vh;"></a>
+      <a class="navbar-brand js-scroll-trigger" href="#"><img src="assets/img/cetysinternacional-black.png" style="width: 20vh;"></a>
 
 
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
         <span class="navbar-toggler-icon"></span>
 
@@ -178,26 +173,6 @@ session_start();
 
   <header id="header" class="fixed-top">
 
-    <!--
-
-        <div class="container d-flex align-items-center">
-
-
-
-        <a href="index.html" class="logo mr-auto ml-5"><img src="assets/img/Logocetysblanco.png" alt="" class="img-fluid"></a>
-
-
-
-        <a href="#ciap" class="btn btn-outline-dark scrollto">CIAP</a>
-
-        <a href="#" class="get-started-btn scrollto">Iniciar Sesión</a>
-
-
-
-        </div>
-
-      -->
-
   </header>
 
   <!-- End Header -->
@@ -222,7 +197,7 @@ session_start();
 
       <div class="text-center">
 
-        <a href="#" class="btn-get-started bg-black rounded-pill scrollto"> 17 - 19 MAYO 2021</a>
+        <p class="btn-get-started bg-black rounded-pill scrollto"> 17 - 19 MAYO 2021</p>
 
       </div>
 
@@ -236,7 +211,7 @@ session_start();
 
             <img class="iconos d-flex" src="assets/img/Academico.png" alt="">
 
-            <h4 class="title"><a href="">Académico</a></h4>
+            <h4 class="title">Académico</h4>
 
           </div>
 
@@ -250,7 +225,7 @@ session_start();
 
             <img class="iconos d-flex" src="assets/img/Software.png" alt="">
 
-            <h4 class="title"><a href="">Software y Multimedia</a></h4>
+            <h4 class="title">Software y Multimedia</h4>
 
           </div>
 
@@ -264,7 +239,7 @@ session_start();
 
             <img class="iconos d-flex" src="assets/img/Producto.png" alt="">
 
-            <h4 class="title"><a href="">Producto</a></h4>
+            <h4 class="title">Producto</h4>
 
           </div>
 
@@ -278,7 +253,7 @@ session_start();
 
             <img class="iconos d-flex" src="assets/img/Proceso.png" alt="">
 
-            <h4 class="title"><a href="">Procesos</a></h4>
+            <h4 class="title">Procesos</h4>
 
           </div>
 
@@ -330,9 +305,7 @@ session_start();
 
 
 
-              <li data-filter=".ACADEMICO" class="filter-active academico"><img class="iconos  movil-size"
-
-                  style="padding-bottom: 2.4rem;" src="assets/img/Academico.png" alt="">Académico</li>
+              <li data-filter=".ACADEMICO" class="filter-active academico"><img class="iconos  movil-size" style="padding-bottom: 2.4rem;" src="assets/img/Academico.png" alt="">Académico</li>
 
 
 
@@ -342,15 +315,11 @@ session_start();
 
 
 
-              <li data-filter=".PRODUCTOC1"><img class="iconos  movil-size" src="assets/img/Producto.png"
+              <li data-filter=".PRODUCTOC1"><img class="iconos  movil-size" src="assets/img/Producto.png" alt="">Producto</li>
 
-                  alt="">Producto</li>
 
-                  
 
-              <li data-filter=".filter-proceso, .PROCESOC1, .PROCESOC2" id="PROCESO"><img class="iconos  movil-size"
-
-                  src="assets/img/Proceso.png" alt="">Proceso</li>
+              <li data-filter=".filter-proceso, .PROCESOC1, .PROCESOC2" id="PROCESO"><img class="iconos  movil-size" src="assets/img/Proceso.png" alt="">Proceso</li>
 
 
 
